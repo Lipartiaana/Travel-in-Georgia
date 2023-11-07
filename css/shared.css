@@ -1,11 +1,22 @@
 :root {
   --color-skyblue: #16d3e4;
   --color-beige: #ffff00;
+  --color-black: #000;
+  --color-white: #fff;
 }
 
 body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
+}
+
+.main-header {
+  width: 100%;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 ul {
@@ -14,21 +25,24 @@ ul {
   padding: 0;
 }
 
-header {
+.secondary-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 16px 60px;
-  position: absolute;
+  padding: 1rem 3.75rem;
   width: 100%;
   box-sizing: border-box;
 }
 
+.page-logo {
+  display: flex;
+  align-items: center;
+}
+
 .page-logo a {
-  padding: 10px;
+  padding: 0.625rem;
   font-family: "Oleo script", sans-serif;
   color: var(--color-beige);
-  font-size: 48px;
+  font-size: 3rem;
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #000;
@@ -41,16 +55,16 @@ header ul {
 }
 
 header li {
-  margin: 24px;
+  margin: 1.5rem;
 }
 header a {
   color: #000;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
-  padding: 12px;
+  padding: 0.75rem;
   text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 header ul a {
@@ -66,11 +80,11 @@ header ul a:hover {
 .btn {
   text-decoration: none;
   background-color: var(--color-beige);
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   color: #000;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 2px 4px 8px #434343;
   cursor: pointer;
 }
@@ -81,7 +95,7 @@ header ul a:hover {
 
 footer {
   background: #72d8bf;
-  padding: 10px 100px;
+  padding: 0.625rem 6.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -102,15 +116,15 @@ footer a:hover {
 }
 
 footer ul {
-  margin-top: 5px;
+  margin-top: 0.3125rem;
   display: flex;
   justify-content: center;
 }
 
 footer li {
-  width: 30px;
-  height: 30px;
-  margin: 0 30px;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin: 0 1.875rem;
 }
 
 footer img {
@@ -128,8 +142,8 @@ footer img:hover {
   width: 100%;
 }
 .contact-header {
-  margin-top: 30px;
-  font-size: 20px;
+  margin-top: 1.875rem;
+  font-size: 1.25rem;
   font-family: helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -137,7 +151,7 @@ footer img:hover {
 }
 
 .form {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   width: 60%;
   margin: auto;
@@ -146,23 +160,23 @@ footer img:hover {
 
 .form input {
   width: 100%;
-  height: 50px;
-  margin: 5px;
-  padding: 5px;
+  height: 3.125rem;
+  margin: 0.3125rem;
+  padding: 0.3125rem;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   border: 1px solid #ccc;
 }
 
 .form label {
-  margin: 5px;
-  padding: 5px;
+  margin: 0.3125rem;
+  padding: 0.3125rem;
 }
 
 .input-container {
   width: 100%;
-  margin: 5px;
-  padding: 5px;
+  margin: 0.3125rem;
+  padding: 0.3125rem;
 }
 
 .contact-wrapper {
@@ -172,27 +186,27 @@ footer img:hover {
 
 textarea {
   width: 100%;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
+  margin: 0.3125rem;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
   border: 1px solid #ccc;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .textarea-container {
-  margin: 5px;
-  padding: 5px;
+  margin: 0.3125rem;
+  padding: 0.3125rem;
 }
 
 .contact-btn {
-  width: 200px !important;
+  width: 12.5rem !important;
   background-color: var(--color-beige);
-  padding: 15px;
-  color: #000;
-  font-size: 20px;
+  padding: 1rem;
+  color: var(--color-black);
+  font-size: 1.25rem;
   font-weight: 700;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   box-shadow: 2px 4px 8px #434343;
   cursor: pointer;
 }
@@ -201,18 +215,27 @@ textarea {
   background-color: var(--color-skyblue);
 }
 
-@media (max-width: 800px) {
+@media (min-width: 1920px) {
+  .main-nav {
+    margin: 10px 5%;
+  }
+}
+
+@media (max-width: 48rem) {
+  .page-logo {
+    text-align: center;
+  }
   .page-logo a {
-    font-size: 44px;
+    font-size: 2rem;
     text-align: center;
   }
 
   header ul a {
-    display: none;
+    font-size: 1rem;
+    padding: 0.625rem;
   }
-
   .form {
-    width: 90%;
+    width: 80%;
   }
 
   .contact-wrapper {
@@ -226,8 +249,8 @@ textarea {
   }
 
   textarea {
-    margin: 5px;
-    padding: 5px;
+    margin: 0.3125rem;
+    padding: 0.3125rem;
   }
 
   .textarea-container {
@@ -236,6 +259,17 @@ textarea {
   }
 
   footer {
-    padding: 20px;
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 25rem) {
+  .page-logo a {
+    font-size: 1.625rem;
+    text-align: center;
+  }
+
+  footer li {
+    margin: 0 0.625rem;
   }
 }

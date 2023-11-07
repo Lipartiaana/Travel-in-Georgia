@@ -2,28 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Oleo+Script:wght@700&family=Oswald:wght@700&family=Quicksand:wght@400;700&family=Roboto:wght@400;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Travel in Georgia</title>
   </head>
+
   <body>
-    <header>
-      <div class="page-logo">
-        <a href="./index.html">Travel in Georgia</a>
-      </div>
-      <nav>
+    <header class="main-header">
+      <img
+        class="hero-bg"
+        src="./images/places/hero-img.jpg"
+        alt="Thavel with us"
+      />
+      <nav class="main-nav">
+        <div class="page-logo">
+          <a href="./index.html">Travel in Georgia</a>
+        </div>
         <ul>
           <li><a href="./html/places.html">Destinations</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
       <section class="hero">
         <div class="hero-content">
           <h1>Travel With Us</h1>
@@ -31,94 +36,94 @@
           <a href="./html/tours.html" class="btn">Discover tours</a>
         </div>
       </section>
-      <section class="highlights">
-        <h2>highlights</h2>
-        <ul class="destination-container">
-          <li class="destination">
-            <a href="./html/places.html#Vardzia"
-              ><img src="./images/places/vardzia.jpg" alt="Vardzia" />
-              <p><strong>Vardzia</strong></p></a
-            >
-          </li>
-          <li class="destination">
-            <a href="./html/places.html#Kazbegi"
-              ><img
-                src="./images/places/gegreti-trinity-church.jpg"
-                alt="Gergety trinity church"
-              />
-              <p><strong>kazbegi</strong></p></a
-            >
-          </li>
-          <li class="destination">
-            <a href="./html/places.html#Sighnaghi"
-              ><img src="./images/places/sighnaghi.jpg" alt="sighnaghi" />
-              <p><strong>Sighnaghi</strong></p></a
-            >
-          </li>
-        </ul>
-        <div class="cuisine">
-          <img
-            class="cuisine-bg"
-            src="./images/places/cuisine-background.jpg"
-            alt=""
-          />
-          <div class="cuisine-content">
-            <h1>Georgian cuisine</h1>
-            <p>
-              try Georgian dishes · Khinkali · Badrijani nigvzit · Khachapuri ·
-              Kharcho · Pkhali · Chikhirtma · Lobio · Georgian salad.
-            </p>
-          </div>
+    </header>
+    <section class="highlights">
+      <h2>highlights</h2>
+      <ul class="destination-container">
+        <li class="destination">
+          <a href="./html/places.html#Vardzia"
+            ><img src="./images/places/vardzia.jpg" alt="Vardzia" />
+            <p><strong>Vardzia</strong></p></a
+          >
+        </li>
+        <li class="destination">
+          <a href="./html/places.html#Kazbegi"
+            ><img
+              src="./images/places/gegreti-trinity-church.jpg"
+              alt="Gergety trinity church"
+            />
+            <p><strong>kazbegi</strong></p></a
+          >
+        </li>
+        <li class="destination">
+          <a href="./html/places.html#Sighnaghi"
+            ><img src="./images/places/sighnaghi.jpg" alt="sighnaghi" />
+            <p><strong>Sighnaghi</strong></p></a
+          >
+        </li>
+      </ul>
+      <div class="cuisine">
+        <img
+          class="cuisine-bg"
+          src="./images/places/cuisine-background.jpg"
+          alt=""
+        />
+        <div class="cuisine-content">
+          <h1>Georgian cuisine</h1>
+          <p>
+            try Georgian dishes · Khinkali · Badrijani nigvzit · Khachapuri ·
+            Kharcho · Pkhali · Chikhirtma · Lobio · Georgian salad.
+          </p>
         </div>
-        <div id="contact" class="contact">
-          <div class="contact-header">
-            <p>What are you waiting for?</p>
-            <p>Contact us</p>
-          </div>
-          <div class="form">
-            <form action="">
-              <div class="contact-wrapper">
-                <div class="input-container">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" placeholder="Name" />
-                </div>
-                <div class="input-container">
-                  <label for="LastName">Last Name</label>
-                  <input type="text" name="LastName" placeholder="Last Name" />
-                </div>
-              </div>
-              <div class="contact-wrapper">
-                <div class="input-container">
-                  <label for="email">Email</label>
-                  <input type="text" name="email" placeholder="Email" />
-                </div>
-                <div class="input-container">
-                  <label for="phone">Phone number</label>
-                  <input
-                    type="text"
-                    name="phone number"
-                    placeholder="Phone number"
-                  />
-                </div>
-              </div>
-              <div class="textarea-container">
-                <label for="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <a href="./index.html">
-                <input class="contact-btn submit" type="submit" value="Submit"
-              /></a>
-            </form>
-          </div>
+      </div>
+      <div id="contact" class="contact">
+        <div class="contact-header">
+          <p>What are you waiting for?</p>
+          <p>Contact us</p>
         </div>
-      </section>
-    </main>
+        <div class="form">
+          <form action="">
+            <div class="contact-wrapper">
+              <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Name" />
+              </div>
+              <div class="input-container">
+                <label for="LastName">Last Name</label>
+                <input type="text" name="LastName" placeholder="Last Name" />
+              </div>
+            </div>
+            <div class="contact-wrapper">
+              <div class="input-container">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Email" />
+              </div>
+              <div class="input-container">
+                <label for="phone">Phone number</label>
+                <input
+                  type="text"
+                  name="phone number"
+                  placeholder="Phone number"
+                />
+              </div>
+            </div>
+            <div class="textarea-container">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <a href="./index.html">
+              <input class="contact-btn submit" type="submit" value="Submit"
+            /></a>
+          </form>
+        </div>
+      </div>
+    </section>
     <footer>
       <ul class="footer-links">
         <li>
