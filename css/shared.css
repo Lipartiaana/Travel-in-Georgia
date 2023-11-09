@@ -153,6 +153,7 @@ footer img:hover {
 .form {
   font-size: 1rem;
   font-weight: 600;
+  max-width: 85rem;
   width: 60%;
   margin: auto;
   text-align: center;
@@ -164,13 +165,23 @@ footer img:hover {
   margin: 0.3125rem;
   padding: 0.3125rem;
   box-sizing: border-box;
+  font-size: 1rem;
   border-radius: 0.3125rem;
-  border: 1px solid #ccc;
+  color: var(--color-black);
+  border: none;
+  transition: all 0.5s ease-in;
+}
+
+.form input:focus {
+  background-color: rgb(154, 252, 154);
+  border-color: transparent;
+  outline: none;
 }
 
 .form label {
   margin: 0.3125rem;
   padding: 0.3125rem;
+  color: var(--color-black);
 }
 
 .input-container {
@@ -187,11 +198,19 @@ footer img:hover {
 textarea {
   width: 100%;
   margin: 0.3125rem;
-  padding: 0.3125rem;
+  padding: 0.5rem;
+  border: none;
   border-radius: 0.3125rem;
-  border: 1px solid #ccc;
   box-sizing: border-box;
   overflow: hidden;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+textarea:focus {
+  background-color: rgb(154, 252, 154);
+  border-color: transparent;
+  outline: none;
 }
 
 .textarea-container {
@@ -199,13 +218,13 @@ textarea {
   padding: 0.3125rem;
 }
 
-.contact-btn {
-  width: 12.5rem !important;
+input[type="submit"] {
+  width: 10rem;
   background-color: var(--color-beige);
-  padding: 1rem;
+  padding: 0.625rem;
   color: var(--color-black);
-  font-size: 1.25rem;
   font-weight: 700;
+  border: none;
   border-radius: 0.5rem;
   box-shadow: 2px 4px 8px #434343;
   cursor: pointer;
@@ -215,9 +234,24 @@ textarea {
   background-color: var(--color-skyblue);
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 120rem) {
   .main-nav {
     margin: 10px 5%;
+  }
+}
+
+@media (max-width: 85rem) {
+  .form {
+    width: 70%;
+  }
+  .form input {
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+
+  textarea {
+    height: 9.375rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -244,7 +278,7 @@ textarea {
   }
 
   .input-container {
-    margin: auto;
+    margin: 0.625rem auto;
     padding: 0;
   }
 
