@@ -2,6 +2,37 @@
   height: 48rem;
 }
 
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .hero-bg {
   position: absolute;
   top: 0;
@@ -36,6 +67,7 @@
   font-size: 3rem;
   font-family: helvetica, sans-serif;
   margin: 0;
+  animation: slide-in-left 2s ease-in-out;
 }
 
 .hero-content p {
@@ -44,8 +76,12 @@
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 2rem;
+  animation: slide-in-right 2s ease-in-out;
 }
 
+.hero-content .btn {
+  animation: appear 2s ease;
+}
 .highlights {
   display: block;
   padding: 1.5rem 0;
@@ -78,9 +114,14 @@
   text-transform: uppercase;
   font-size: 1.5rem;
   color: var(--color-black);
+  width: fit-content;
+  margin: 1rem auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
 }
 .destination a {
   text-decoration: none;
+  cursor: inherit;
 }
 .destination p:hover {
   color: var(--color-skyblue);
@@ -91,10 +132,12 @@
   box-shadow: 2px 4px 10px #434343;
   border-radius: 0.5rem;
   object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .destination img:hover {
-  transform: translateY(5px);
+  transform: translateY(7px);
 }
 
 .cuisine {
